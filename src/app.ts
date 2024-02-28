@@ -1,6 +1,8 @@
 import express from "express";
 
 import path from "path";
+import router from './router';
+
 /**1 Entrance **/
 
 const app = express();
@@ -16,5 +18,6 @@ app.set("views", path.join(__dirname, "views"));
 app.set("views engine", "ejs");
 
 /**4 Routers **/
+app.use("/", router);  // Muddleware design pattern
 
 export default app;
