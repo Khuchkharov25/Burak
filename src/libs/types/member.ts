@@ -21,7 +21,7 @@ export interface MemberInput {
    memberStatus?: MemberStatus; 
    memberNick: String;
    memberPhone: String;
-   memberPassword: String;
+   memberPassword: string;
    memberAdress?: String;
    memberDesc?: String;
    memberImage?: String;
@@ -30,5 +30,5 @@ export interface MemberInput {
 
 export interface LoginInput {
     memberNick: String;
-    memberPassword: String;
+    memberPassword: string;
 }
