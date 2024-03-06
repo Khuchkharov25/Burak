@@ -1,3 +1,14 @@
+// I Task 
+function getDigits(str: string){
+  const num = str.match(/\d/g);
+  if (num) return num.join('');
+  else return 0;
+
+}
+const str = "m14i1t";
+const answer = getDigits(str);
+console.log("Stringda qatnashgan raqamlar:", answer)
+
 /* Project standarts
   -Logging standarts
   -Naming standarts
@@ -20,12 +31,12 @@
 
 // H Task 
 
-const arr = [1, -4, 2];
-const arr_1 = arr.filter(getPositive);
+// const arr = [1, -4, 2];
+// const arr_1 = arr.filter(getPositive);
 
-function getPositive(arr: number) {
-    return arr >= 0;
-}
+// function getPositive(arr: number) {
+//     return arr >= 0;
+// }
 
-const javob = arr_1.join('');
-console.log(javob);
+// const javob = arr_1.join('');
+// console.log(javob);
