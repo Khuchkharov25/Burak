@@ -1,13 +1,40 @@
-// I Task 
-function getDigits(str: string){
-  const num = str.match(/\d/g);
-  if (num) return num.join('');
-  else return 0;
+// J Task 
 
+function findLongestWord(str: string) {
+ 
+  const words = str.split(" ");
+  
+
+  let longest = "";
+  let max = 0;
+  
+ 
+  for (let i = 0; i < words.length; i++) {
+      const word = words[i];
+      if (word.length > max) {
+          longest = word;
+          max = word.length;
+      }
+  }
+  return longest;
 }
-const str = "m14i1t";
-const answer = getDigits(str);
-console.log("Stringda qatnashgan raqamlar:", answer)
+const str = "I come from Uzbekistan";
+const longestWord = findLongestWord(str);
+console.log("The Longest word is:", longestWord);
+
+
+
+
+// I Task 
+// function getDigits(str: string){
+//   const num = str.match(/\d/g);
+//   if (num) return num.join('');
+//   else return 0;
+
+// }
+// const str = "m14i1t";
+// const answer = getDigits(str);
+// console.log("Stringda qatnashgan raqamlar:", answer)
 
 /* Project standarts
   -Logging standarts
