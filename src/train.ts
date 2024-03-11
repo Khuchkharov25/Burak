@@ -1,3 +1,5 @@
+// K Task
+
 function countVowels(str: String) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
   let count = 0;
