@@ -81,6 +81,23 @@ console.log("vowels:", answer);
 
 */
 
+/* Frontend Dvelopment 
+   Traditional FD => SSR => EJS
+   ModernFD => SPA => REACT
+*/
+
+/* Cookies
+   request join
+   self destroy
+*/
+
+
+/* Validation
+  Frontend Validation
+  Backend Validation
+  Database Validation
+*/
+
 
 // H Task 
 
