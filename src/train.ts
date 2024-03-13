@@ -1,17 +1,36 @@
+// L Task 
+
+function reverseSentence(str: String){
+  const arr = str.split(" ");
+  let reversedWords = arr.map(function(arr) {
+    return arr.split("").reverse().join("");
+});
+let reverseSentence = reversedWords.join(" ");
+
+return reverseSentence;
+  
+}
+const str = "we love coding";
+const answer = reverseSentence(str);
+console.log("reverse:", answer);
+
+
+
+
 // K Task
 
-function countVowels(str: String) {
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
-  let count = 0;
-  for(let ele of str){
-    if(vowels.includes(ele)) count++;
-  }
-  return count;
-}
+// function countVowels(str: String) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+//   let count = 0;
+//   for(let ele of str){
+//     if(vowels.includes(ele)) count++;
+//   }
+//   return count;
+// }
 
-const str = "string";
-const answer = countVowels(str);
-console.log("vowels:", answer);
+// const str = "string";
+// const answer = countVowels(str);
+// console.log("vowels:", answer);
 
 
 
