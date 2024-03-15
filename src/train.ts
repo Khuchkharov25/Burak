@@ -1,18 +1,30 @@
+// M Task
+
+function getSquareNumbers(num: number[]){
+   const sqr = num.map((ele) => {
+    return {number: ele, square: ele * ele };
+   })
+   return sqr
+}
+
+console.log(getSquareNumbers([2, 4, 6]));
+
+
 // L Task 
 
-function reverseSentence(str: String){
-  const arr = str.split(" ");
-  let reversedWords = arr.map(function(arr) {
-    return arr.split("").reverse().join("");
-});
-let reverseSentence = reversedWords.join(" ");
+// function reverseSentence(str: String){
+//   const arr = str.split(" ");
+//   let reversedWords = arr.map(function(arr) {
+//     return arr.split("").reverse().join("");
+// });
+// let reverseSentence = reversedWords.join(" ");
 
-return reverseSentence;
+// return reverseSentence;
   
-}
-const str = "we love coding";
-const answer = reverseSentence(str);
-console.log("reverse:", answer);
+// }
+// const str = "we love coding";
+// const answer = reverseSentence(str);
+// console.log("reverse:", answer);
 
 
 
