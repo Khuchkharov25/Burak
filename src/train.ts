@@ -1,13 +1,27 @@
+// N Task 
+
+function palindromCheck(str: String){
+   const word = str.split("").reverse().join('');
+   if(str == word) return true;
+   else return false;
+
+}
+const str = "dad";
+// const str = "son";
+const answer = palindromCheck(str);
+console.log(answer);
+
+
 // M Task
 
-function getSquareNumbers(num: number[]){
-   const sqr = num.map((ele) => {
-    return {number: ele, square: ele * ele };
-   })
-   return sqr
-}
+// function getSquareNumbers(num: number[]){
+//    const sqr = num.map((ele) => {
+//     return {number: ele, square: ele * ele };
+//    })
+//    return sqr
+// }
 
-console.log(getSquareNumbers([2, 4, 6]));
+// console.log(getSquareNumbers([2, 4, 6]));
 
 
 // L Task 
