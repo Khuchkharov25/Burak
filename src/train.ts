@@ -1,15 +1,35 @@
+// O Task
+
+function calculateSumOfNumbers(arr: any){
+   let count = 0;
+   for (let i = 0; i <= arr.length; i++){
+      if(typeof arr[i] == "number") {count = count + arr[i];}
+   }
+   return count;
+   
+}
+
+const arr = [10, "10", {son: 10}, true, 35];
+const answer = calculateSumOfNumbers(arr);
+console.log(answer);
+
+
+
+
+
+
 // N Task 
 
-function palindromCheck(str: String){
-   const word = str.split("").reverse().join('');
-   if(str == word) return true;
-   else return false;
+// function palindromCheck(str: String){
+//    const word = str.split("").reverse().join('');
+//    if(str == word) return true;
+//    else return false;
 
-}
-const str = "dad";
-// const str = "son";
-const answer = palindromCheck(str);
-console.log(answer);
+// }
+// const str = "dad";
+// // const str = "son";
+// const answer = palindromCheck(str);
+// console.log(answer);
 
 
 // M Task
