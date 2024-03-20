@@ -60,7 +60,7 @@ restaurantController.processSignUp = async (req:  AdminRequest, res: Response) =
     }catch (err) {
         console.log("Error: processSignUp", err);
         const message = err instanceof Errors ? err.message : Message.SOMETHING_WENT_WRONG;
-       res.send(`<script> alert("${message}"); window.location.replace('admin/signup) </script>`);
+       res.send(`<script> alert("${message}"); window.location.replace('/admin/signup) </script>`);
     }
 };
 
@@ -80,7 +80,7 @@ restaurantController.processLogin = async (req:  AdminRequest, res: Response) =>
     }catch (err) {
         console.log("Error: processLogin", err);
        const message = err instanceof Errors ? err.message : Message.SOMETHING_WENT_WRONG;
-       res.send(`<script> alert("${message}"); window.location.replace('admin/login) </script>`);
+       res.send(`<script> alert("${message}"); window.location.replace('/admin/login) </script>`);
     }
 };
 
