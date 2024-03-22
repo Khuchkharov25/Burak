@@ -1,17 +1,27 @@
+// P Task 
+
+function objectToArray(obj: Object) {
+  return Object.entries(obj);
+}
+ const obj =  {a: 10, b: 20};
+ const answer = objectToArray(obj);
+console.log(answer);
+
+
 // O Task
 
-function calculateSumOfNumbers(arr: any){
-   let count = 0;
-   for (let i = 0; i <= arr.length; i++){
-      if(typeof arr[i] == "number") {count = count + arr[i];}
-   }
-   return count;
+// function calculateSumOfNumbers(arr: any){
+//    let count = 0;
+//    for (let i = 0; i <= arr.length; i++){
+//       if(typeof arr[i] == "number") {count = count + arr[i];}
+//    }
+//    return count;
    
-}
+// }
 
-const arr = [10, "10", {son: 10}, true, 35];
-const answer = calculateSumOfNumbers(arr);
-console.log(answer);
+// const arr = [10, "10", {son: 10}, true, 35];
+// const answer = calculateSumOfNumbers(arr);
+// console.log(answer);
 
 
 
