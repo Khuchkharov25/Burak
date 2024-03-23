@@ -1,11 +1,26 @@
+// Q Task
+  const obj =  {name: "BMW", model: "M3"};
+  const str = "model";
+
+ function hasProperty(obj: Object, str: String) {
+  for(let i in obj){
+    if(i === str) return true;
+  }
+  return false;
+
+ }
+  
+  const answer = hasProperty(obj,str);
+ console.log(answer);
+
 // P Task 
 
-function objectToArray(obj: Object) {
-  return Object.entries(obj);
-}
- const obj =  {a: 10, b: 20};
- const answer = objectToArray(obj);
-console.log(answer);
+// function objectToArray(obj: Object) {
+//   return Object.entries(obj);
+// }
+//  const obj =  {a: 10, b: 20};
+//  const answer = objectToArray(obj);
+// console.log(answer);
 
 
 // O Task
