@@ -1,17 +1,35 @@
-// Q Task
-  const obj =  {name: "BMW", model: "M3"};
-  const str = "model";
+// R Task
 
- function hasProperty(obj: Object, str: String) {
-  for(let i in obj){
-    if(i === str) return true;
+function calculate(str: String) {
+  let result = 0;
+  const arr = str.split(' ');
+  const val_1 = parseInt(arr[0]);
+  const val = arr[1];
+  const val_2 = parseInt(arr[2]);
+  if(val === '+'){
+     result = val_1 + val_2
   }
-  return false;
+  return result;
+}
+ const str =  "1 + 3";
+ const answer = calculate(str);
+console.log(answer);
 
- }
+
+// Q Task
+//   const obj =  {name: "BMW", model: "M3"};
+//   const str = "model";
+
+//  function hasProperty(obj: Object, str: String) {
+//   for(let i in obj){
+//     if(i === str) return true;
+//   }
+//   return false;
+
+//  }
   
-  const answer = hasProperty(obj,str);
- console.log(answer);
+//   const answer = hasProperty(obj,str);
+//  console.log(answer);
 
 // P Task 
 
