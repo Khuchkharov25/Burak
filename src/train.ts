@@ -1,19 +1,32 @@
+// S Task
+
+function missingNumber(arr: number[]) {
+  const sortArr = arr.sort();
+  for(let i = 0; i <=sortArr.length; i++){
+    if(sortArr[i] !== i) return i;
+  }
+}
+ const arr =  [3, 0, 1];
+ const answer = missingNumber(arr);
+console.log(answer);
+
+
 // R Task
 
-function calculate(str: String) {
-  let result = 0;
-  const arr = str.split(' ');
-  const val_1 = parseInt(arr[0]);
-  const val = arr[1];
-  const val_2 = parseInt(arr[2]);
-  if(val === '+'){
-     result = val_1 + val_2
-  }
-  return result;
-}
- const str =  "1 + 3";
- const answer = calculate(str);
-console.log(answer);
+// function calculate(str: String) {
+//   let result = 0;
+//   const arr = str.split(' ');
+//   const val_1 = parseInt(arr[0]);
+//   const val = arr[1];
+//   const val_2 = parseInt(arr[2]);
+//   if(val === '+'){
+//      result = val_1 + val_2
+//   }
+//   return result;
+// }
+//  const str =  "1 + 3";
+//  const answer = calculate(str);
+// console.log(answer);
 
 
 // Q Task
